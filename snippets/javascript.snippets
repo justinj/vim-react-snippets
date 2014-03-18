@@ -1,0 +1,79 @@
+snippet cdm
+	componentDidMount: function() {
+		${1}
+	},
+snippet cdup
+	componentDidUpdate: function(prevProps, prevState) {
+		${1}
+	},
+snippet cwm
+	componentWillMount: function() {
+		${1}
+	},
+snippet cwr
+	componentWillReceiveProps: function(nextProps) {
+		${1}
+	},
+snippet cwun
+	componentWillUnmount: function() {
+		${1}
+	},
+snippet cwu
+	componentWillUpdate: function(nextProps, nextState) {
+		${1}
+	},
+snippet fup
+	forceUpdate(${1:callback});
+snippet gdp
+	getDefaultProps: function() {
+		return {
+			${1}
+		};
+	},
+snippet gis
+	getInitialState: function() {
+		return {
+			${1}: ${2}
+		};
+	},
+snippet ism
+	isMounted()
+snippet jsx
+	 /** @jsx React.DOM */
+snippet pt
+	propTypes: {
+		${1}: React.PropTypes.${2:string}
+	},
+snippet rcc
+	/** @jsx React.DOM */
+
+	var React = require('React');
+
+	var ${1:name} = React.createClass({
+		render: function() {
+			return (
+				${0:<div />}
+			);
+		}
+	});
+	module.exports = $1;
+snippet ren
+	render: function() {
+		return (
+			${1:<div />}
+		);
+	}
+snippet sst
+	this.setState({
+		${1}: ${2}
+	});
+snippet scu
+	shouldComponentUpdate: function(nextProps, nextState) {
+		${1}
+	},
+snippet props
+	this.props.${1}
+snippet state
+	this.state.${1}
+snippet trp
+	transferPropsTo(${1});
