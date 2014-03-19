@@ -39,24 +39,31 @@ snippet gis
 snippet ism
 	isMounted()
 snippet jsx
-	 /** @jsx React.DOM */
+	/**
+	 * @jsx React.DOM
+	 */
 snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
 	},
 snippet rcc
-	/** @jsx React.DOM */
+	/**
+	 * @jsx React.DOM
+	 */
 
 	var React = require('React');
 
-	var ${1:name} = React.createClass({
+	var ${1} = React.createClass({
+
 		render: function() {
 			return (
 				${0:<div />}
 			);
 		}
+
 	});
-	module.exports = $1;
+
+	module.exports = ${1};
 snippet ren
 	render: function() {
 		return (
@@ -64,7 +71,7 @@ snippet ren
 		);
 	}
 snippet sst
-	this.setState({
+	setState({
 		${1}: ${2}
 	});
 snippet scu
