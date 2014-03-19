@@ -29,3 +29,26 @@ Bundle "garbas/vim-snipmate"
 " Other sets of snippets (optional):
 Bundle "honza/vim-snippets"
 ```
+
+Usage
+=====
+
+Within any Javascript or JSX file, you should be able to do the following:
+
+(in insert mode)
+```
+gdp<Tab>
+```
+
+expanding to
+
+```
+getDefaultProps: function() {
+    return {
+
+    };
+},
+```
+
+And a bunch of others!
+Check `snippets/javascript.snippets` to see the full list.
