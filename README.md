@@ -4,8 +4,7 @@ vim-react-snippets
 A set of snippets for Vim to work with Facebook's [React](http://facebook.github.io/react/) library.
 
 A direct port of the awesome snippets from 
-[jgebhardt/sublime-react](https://github.com/jgebhardt/sublime-react)
-to work with Vim.
+[jgebhardt/sublime-react](https://github.com/jgebhardt/sublime-react).
 
 Requires [vim-snipmate](https://github.com/garbas/vim-snipmate).
 
