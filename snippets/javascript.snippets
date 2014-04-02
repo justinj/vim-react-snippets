@@ -1,3 +1,5 @@
+snippet cs
+	var cx = React.addons.classSet;
 snippet cdm
 	componentDidMount: function() {
 		${1}
@@ -22,6 +24,10 @@ snippet cwu
 	componentWillUpdate: function(nextProps, nextState) {
 		${1}
 	},
+snippet cx
+	cx({
+		$1: $2
+	});
 snippet fup
 	forceUpdate(${1:callback});
 snippet gdp
