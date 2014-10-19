@@ -1,0 +1,137 @@
+#
+#  React snippets
+#
+
+snippet cs "React.addons.classSet" b
+var cx = React.addons.classSet;
+endsnippet
+
+snippet cdm "component did mount" b
+componentDidMount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cdup "component did update" b
+componentDidUpdate: function(prevProps, prevState) {
+	${1}
+},$0
+endsnippet
+
+snippet cwm "component will mount" b
+componentWillMount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cwr "component will receive props" b
+componentWillReceiveProps: function(nextProps) {
+	${1}
+},$0
+endsnippet
+
+snippet cwun "component will unmount" b
+componentWillUnmount: function() {
+	${1}
+},$0
+endsnippet
+
+snippet cwu "component will update" b
+componentWillUpdate: function(nextProps, nextState) {
+	${1}
+},$0
+endsnippet
+
+snippet cx
+cx({
+	${1}: ${2}
+});
+endsnippet
+
+snippet fup
+forceUpdate(${1:callback});
+endsnippet
+
+snippet gdp "get default props" b
+getDefaultProps: function() {
+	return {
+		${1}
+	};
+},$0
+endsnippet
+
+snippet gis "get initial state" b
+getInitialState: function() {
+	return {
+		${1}: ${2}
+	};
+},$0
+endsnippet
+
+snippet ism "is mounted"
+isMounted()
+endsnippet
+
+snippet jsx "define jsx dom" b
+/**
+ * @jsx React.DOM
+ */
+endsnippet
+
+snippet pt "propTypes" b
+propTypes: {
+	${1}: React.PropTypes.${2:string}
+},
+endsnippet
+
+snippet rcc "create class/component" b
+${1:/**
+* @jsx React.DOM
+*/
+
+var React = require('React');
+}
+var ${2:ClassName} = React.createClass({
+
+render: function() {
+	return (
+		${VISUAL}$4
+	);
+}
+
+});
+$0
+${3:module.exports = $2;}
+endsnippet
+
+snippet ren
+render: function() {
+	return (
+		${1:<div />}
+	);
+}$0
+endsnippet
+
+snippet sst "set state" b
+this.setState({
+	${1}: ${2}
+});$0
+endsnippet
+
+snippet scu "should component update"
+shouldComponentUpdate: function(nextProps, nextState) {
+	${1}
+},$0
+endsnippet
+
+snippet props "get property" i
+this.props.${1}
+endsnippet
+
+snippet state "get state" i
+this.state.${1}
+endsnippet
+
+snippet trp
+this.transferPropsTo(${VISUAL}$0);
+endsnippet
