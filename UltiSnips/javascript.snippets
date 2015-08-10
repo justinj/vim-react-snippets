@@ -76,18 +76,6 @@ snippet jsx "define jsx dom" b
 /**
  * @jsx React.DOM
  */
-endsnippet
-
-snippet pt "propTypes" b
-propTypes: {
-	${1}: React.PropTypes.${2:string}
-},
-endsnippet
-
-snippet rcc "create class/component" b
-${1:/**
-* @jsx React.DOM
-*/
 
 var React = require('react');
 }
@@ -102,6 +90,25 @@ render: function() {
 });
 $0
 ${3:module.exports = $2;}
+endsnippet
+
+snippet pt "propTypes" b
+propTypes: {
+	${1}: React.PropTypes.${2:string}
+},
+endsnippet
+
+snippet rcc "create class/component" b
+var ${1:ClassName} = React.createClass({
+
+render: function() {
+	return (
+		${VISUAL}$2
+	);
+}
+
+});
+$0
 endsnippet
 
 snippet ren
