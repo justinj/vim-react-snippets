@@ -48,14 +48,6 @@ snippet jsx
 	/**
 	 * @jsx React.DOM
 	 */
-snippet pt
-	propTypes: {
-		${1}: React.PropTypes.${2:string}
-	},
-snippet rcc
-	/**
-	 * @jsx React.DOM
-	 */
 
 	var React = require('react');
 
@@ -70,6 +62,20 @@ snippet rcc
 	});
 
 	module.exports = $1;
+snippet pt
+	propTypes: {
+		${1}: React.PropTypes.${2:string}
+	},
+snippet rcc
+	var ${1:ClassName} = React.createClass({
+
+		render: function() {
+			return (
+				${0:<div />}
+			);
+		}
+
+	});
 snippet ren
 	render: function() {
 		return (
