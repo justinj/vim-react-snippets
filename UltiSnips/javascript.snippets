@@ -142,3 +142,15 @@ endsnippet
 snippet trp "Transfer props to"
 this.transferPropsTo(${VISUAL}$0)
 endsnippet
+
+# This snippet will only works if the keyword 'con' is the first word of line
+snippet con "Constructor for React.Component" b
+constructor(props, context) {
+	super(props, context)
+
+	this.state = {
+		$1: $2
+	}
+}$0
+
+endsnippet
