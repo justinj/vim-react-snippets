@@ -77,9 +77,9 @@ snippet jsx "Define jsx dom" b
  * @jsx React.DOM
  */
 
-var React = require('react');
-}
-var ${2:ClassName} = React.createClass({
+import React from 'react';
+
+let ${2:ClassName} = React.createClass({
 
 render() {
 	return (
@@ -98,8 +98,8 @@ propTypes: {
 }
 endsnippet
 
-snippet rcc "Create React.Component" b
-var ${1:ClassName} = React.createClass({
+snippet rcc "React.createClass" b
+let ${1:ClassName} = React.createClass({
 
 render() {
 	return (
@@ -109,6 +109,16 @@ render() {
 
 })
 $0
+endsnippet
+
+snippet rcx "Extends React.Component" b
+class ${1:ClassName} extends React.Component {
+	render(){
+		return (
+			$2
+		)
+	}
+}
 endsnippet
 
 snippet ren "render"
