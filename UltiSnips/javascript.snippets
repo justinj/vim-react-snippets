@@ -6,38 +6,38 @@ snippet cs "React.addons.classSet" b
 var cx = React.addons.classSet;
 endsnippet
 
-snippet cdm "component did mount" b
-componentDidMount: function() {
+snippet cdm "Component did mount" b
+componentDidMount() {
 	${1}
 },$0
 endsnippet
 
-snippet cdup "component did update" b
-componentDidUpdate: function(prevProps, prevState) {
+snippet cdup "Component did update" b
+componentDidUpdate(prevProps, prevState) {
 	${1}
 },$0
 endsnippet
 
-snippet cwm "component will mount" b
-componentWillMount: function() {
+snippet cwm "Component will mount" b
+componentWillMount() {
 	${1}
 },$0
 endsnippet
 
-snippet cwr "component will receive props" b
-componentWillReceiveProps: function(nextProps) {
+snippet cwr "Component will receive props" b
+componentWillReceiveProps(nextProps) {
 	${1}
 },$0
 endsnippet
 
-snippet cwun "component will unmount" b
-componentWillUnmount: function() {
+snippet cwun "Component will unmount" b
+componentWillUnmount() {
 	${1}
 },$0
 endsnippet
 
-snippet cwu "component will update" b
-componentWillUpdate: function(nextProps, nextState) {
+snippet cwu "Component will update" b
+componentWillUpdate(nextProps, nextState) {
 	${1}
 },$0
 endsnippet
@@ -48,31 +48,31 @@ cx({
 });
 endsnippet
 
-snippet fup
+snippet fup "Force update"
 forceUpdate(${1:callback});
 endsnippet
 
-snippet gdp "get default props" b
-getDefaultProps: function() {
+snippet gdp "Get default props" b
+getDefaultProps() {
 	return {
 		${1}
 	};
 },$0
 endsnippet
 
-snippet gis "get initial state" b
-getInitialState: function() {
+snippet gis "Get initial state" b
+getInitialState() {
 	return {
 		${1}: ${2}
 	};
 },$0
 endsnippet
 
-snippet ism "is mounted"
+snippet ism "Is mounted"
 isMounted()
 endsnippet
 
-snippet jsx "define jsx dom" b
+snippet jsx "Define jsx dom" b
 /**
  * @jsx React.DOM
  */
@@ -81,7 +81,7 @@ var React = require('react');
 }
 var ${2:ClassName} = React.createClass({
 
-render: function() {
+render() {
 	return (
 		${VISUAL}$4
 	);
@@ -98,10 +98,10 @@ propTypes: {
 },
 endsnippet
 
-snippet rcc "create class/component" b
+snippet rcc "Create React.Component" b
 var ${1:ClassName} = React.createClass({
 
-render: function() {
+render() {
 	return (
 		${VISUAL}$2
 	);
@@ -111,34 +111,34 @@ render: function() {
 $0
 endsnippet
 
-snippet ren
-render: function() {
+snippet ren "render"
+render() {
 	return (
 		${1:<div />}
 	);
 }$0
 endsnippet
 
-snippet sst "set state" b
+snippet sst "Set state" b
 this.setState({
 	${1}: ${2}
 });$0
 endsnippet
 
-snippet scu "should component update"
-shouldComponentUpdate: function(nextProps, nextState) {
+snippet scu "Should component update"
+shouldComponentUpdate(nextProps, nextState) {
 	${1}
 },$0
 endsnippet
 
-snippet props "get property" i
+snippet props "Get property" i
 this.props.${1}
 endsnippet
 
-snippet state "get state" i
+snippet state "Get state" i
 this.state.${1}
 endsnippet
 
-snippet trp
+snippet trp "Transfer props to"
 this.transferPropsTo(${VISUAL}$0);
 endsnippet
