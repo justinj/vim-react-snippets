@@ -9,37 +9,37 @@ endsnippet
 snippet cdm "Component did mount" b
 componentDidMount() {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cdup "Component did update" b
 componentDidUpdate(prevProps, prevState) {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cwm "Component will mount" b
 componentWillMount() {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cwr "Component will receive props" b
 componentWillReceiveProps(nextProps) {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cwun "Component will unmount" b
 componentWillUnmount() {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cwu "Component will update" b
 componentWillUpdate(nextProps, nextState) {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet cx
@@ -49,23 +49,23 @@ cx({
 endsnippet
 
 snippet fup "Force update"
-forceUpdate(${1:callback});
+forceUpdate(${1:callback})
 endsnippet
 
 snippet gdp "Get default props" b
 getDefaultProps() {
 	return {
 		${1}
-	};
-},$0
+	}
+}$0
 endsnippet
 
 snippet gis "Get initial state" b
 getInitialState() {
 	return {
 		${1}: ${2}
-	};
-},$0
+	}
+}$0
 endsnippet
 
 snippet ism "Is mounted"
@@ -95,7 +95,7 @@ endsnippet
 snippet pt "propTypes" b
 propTypes: {
 	${1}: React.PropTypes.${2:string}
-},
+}
 endsnippet
 
 snippet rcc "Create React.Component" b
@@ -104,10 +104,10 @@ var ${1:ClassName} = React.createClass({
 render() {
 	return (
 		${VISUAL}$2
-	);
+	)
 }
 
-});
+})
 $0
 endsnippet
 
@@ -115,20 +115,20 @@ snippet ren "render"
 render() {
 	return (
 		${1:<div />}
-	);
+	)
 }$0
 endsnippet
 
 snippet sst "Set state" b
 this.setState({
 	${1}: ${2}
-});$0
+})$0
 endsnippet
 
 snippet scu "Should component update"
 shouldComponentUpdate(nextProps, nextState) {
 	${1}
-},$0
+}$0
 endsnippet
 
 snippet props "Get property" i
@@ -140,5 +140,5 @@ this.state.${1}
 endsnippet
 
 snippet trp "Transfer props to"
-this.transferPropsTo(${VISUAL}$0);
+this.transferPropsTo(${VISUAL}$0)
 endsnippet
