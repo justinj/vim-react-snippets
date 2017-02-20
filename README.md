@@ -1,51 +1,30 @@
 vim-react-snippets
 ==================
 
-A set of snippets for Vim to work with Facebook's [React](http://facebook.github.io/react/) library.
+A set of snippets for Vim to work with Facebook's
+[React](http://facebook.github.io/react/) library. This fork change the snippet
+syntax to ES6. Remove semicolon and comma. I also remove snippets related to
+[react-classset](https://github.com/petehunt/react-classset) as it is deprecated now.
 
-A direct port of the awesome snippets from 
-[jgebhardt/sublime-react](https://github.com/jgebhardt/sublime-react).
+Require [UltiSnips](https://github.com/SirVer/ultisnips).
+I only update the `UltiSnips` version. Pull requests for
+[vim-snipmate](https://github.com/garbas/vim-snipmate) version are welcome.
 
-Requires [vim-snipmate](https://github.com/garbas/vim-snipmate) or [Ultisnips](https://github.com/SirVer/ultisnips).
 
 Installation
 ============
 
-Use your preferred Vim plugin installation method.
-I like [Vundle](http://github.com/gmarik/vundle), but other options like
-[pathogen](https://github.com/tpope/vim-pathogen) should work fine as well.
+Use your preferred Vim plugin installation method. For me, I like
+[vim-plug](https://github.com/junegunn/vim-plug). If you also using `vim-plug`,
+put the following into your `.vimrc`.
 
-####SnipMate
+````vimrc
+Plug 'SirVer/ultisnips'
 
-If you're using Vundle, and you don't currently have SnipMate, you will need to
-add the following to your `.vimrc` (taken from the [SnipMate README](https://github.com/garbas/vim-snipmate/blob/master/README.md)):
+" Currently, es6 version of snippets is available in es6 branch only
+Plug 'letientai299/vim-react-snippets', { 'branch': 'es6' }
 
-```
-" vim-react-snippets:
-Bundle "justinj/vim-react-snippets"
-
-" SnipMate and its dependencies:
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-
-" Other sets of snippets (optional):
-Bundle "honza/vim-snippets"
-```
-####Ultisnips
-
-If you prefer to use `vim-react-snippets` with `Ultisnips`, put this in your .vimrc 
-to install using Vundle
-
-````
-" vim-react-snippets:
-Bundle "justinj/vim-react-snippets"
-
-" Ultisnips
-Bundle "SirVer/ultisnips"
-
-" Other sets of snippets (optional):
-Bundle "honza/vim-snippets"
+Plug 'honza/vim-snippets' "optional
 ````
 
 Usage
@@ -61,12 +40,31 @@ gdp<Tab>
 expanding to
 
 ```
-getDefaultProps: function() {
+getDefaultProps() {
     return {
 
     };
 },
 ```
 
+Another example:
+
+```
+rcx<Tab>
+```
+
+Expanding to
+
+```
+class ClassName extends React.Component {
+  render(){
+    return (
+
+    )
+  }
+}
+```
+
 And a bunch of others!
-Check `snippets/javascript.snippets` to see the full list.
+
+Check `./UltiSnips/javascript.snippets` to see the full list.
