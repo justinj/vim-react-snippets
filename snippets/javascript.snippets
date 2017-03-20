@@ -96,3 +96,44 @@ snippet state
 	this.state.${1}
 snippet trp
 	transferPropsTo(${1});
+snippet ejsx
+	import React from 'react'
+
+	class ${1:ClassName} extends React.Component {
+		
+		render() {
+			return (
+				${0:<div />}		
+			);
+		}
+	}
+
+	export default $1;
+snippet eren
+	render() {
+		return (
+			${1:<div />}
+		);
+	},
+snippet ecwm
+	constructor(props) {
+		super(props);
+
+		${1}
+	},
+snippet ecwun
+	componentWillUnmount = () => {
+		${1}
+	},
+snippet ecwu
+	componentWillUpdate = (nextProps, nextState) {
+		${1}
+	},
+snippet ecdm
+	componentDidUpdate = (prevProps, prevState) => {
+		${1}
+	},
+snippet ecwm
+	componentWillMount = () => {
+		${1}
+	}
