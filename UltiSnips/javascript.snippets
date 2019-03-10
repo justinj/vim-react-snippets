@@ -2,6 +2,26 @@
 #  React snippets
 #
 
+snippet ush "Use State Hook" b
+const [${1}, ${2}] = useState(${3});$0
+endsnippet
+ 
+snippet ufh "Use Effect Hook" b
+useEffect(() => {
+	${1}
+});$0
+endsnippet
+ 
+snippet ch "Custom Hook" b
+function use${1}(${2}) {
+	const [${3}, ${4}] = useState(${5});
+	
+  useEffect(() => {
+  	${6}
+	});
+}$0                                                                                                                                                                           
+endsnippet
+
 snippet cdm "Component did mount" b
 componentDidMount() {
 	${1}
